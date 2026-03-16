@@ -157,9 +157,6 @@
   .footer_menu ul {
     width: 100%;
   }
-  .footer_menu ul.footer_dropdown {
-    display: none;
-  }
   .footer_menu ul li.firstmenu {
     display: block;
     border-bottom: 1px solid #ddd;
@@ -169,6 +166,9 @@
   }
   .footer_menu ul li.firstmenu i {
     display: block;
+  }
+  .footer_menu ul.footer_dropdown {
+    display: none;
   }
 
   .delta_desc {

@@ -2,28 +2,31 @@
 
 /* *****mNAV start!***** */
 #mNAV {
-  width: 50%;
+}
+#mNAV button {
+  padding: 15px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 200;
-  display: none;
-}
-#mNAV button {
-  padding: 15px;
+  /* display: none; */
 }
 #mNAV button i.fa-bars {
   color: #fff;
   font-size: 30px;
 }
 #mNAV nav {
-  width: 100%;
+  padding: 15px;
+  position: fixed;
+  top: 63px;
+  left: 0;
+  z-index: 200;
   background-color: pink;
   padding: 5% 10%;
   box-sizing: border-box;
   /* display: none; */
-  transform: translateX(-600px);
-  transition: transform 0.5s;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 #mNAV nav.dropdown {
   /* display: block; */
