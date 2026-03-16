@@ -22,6 +22,9 @@
   }
 }
 @media (max-width: 960px) {
+  #mNAV {
+    display: block;
+  }
   .logo {
     margin-right: 0;
   }
@@ -154,7 +157,7 @@
   .footer_menu ul {
     width: 100%;
   }
-  .footer_menu ul li {
+  .footer_menu ul.footer_dropdown {
     display: none;
   }
   .footer_menu ul li.firstmenu {
@@ -191,12 +194,21 @@
   .banner_txt p {
     display: none;
   }
-
+  .icon_menu li {
+    padding: 13px 0;
+  }
+  .fee li {
+    padding: 17px 0;
+  }
   .small_title {
     font-size: 16px;
     margin-bottom: 5px;
   }
   .title {
     font-size: 30px;
+  }
+  i.fa-bed,
+  i.fa-car {
+    font-size: 22px;
   }
 }

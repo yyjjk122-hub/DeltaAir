@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 아이콘 -->
     <script src="https://kit.fontawesome.com/fb27592f06.js" crossorigin="anonymous"></script>
+
+    <!-- 스와이퍼 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="asset/img/favicon.ico" />
+    <link rel="icon" type="image/img" href="asset/img/favicon.png" />
+    <link rel="icon" href="image/svg+xml" href="asset/img/favicon.svg" />
+
+    <!-- 스타일 -->
     <link rel="stylesheet" href="asset/css/font.css" />
     <link rel="stylesheet" href="asset/css/reset.css" />
     <link rel="stylesheet" href="asset/css/deltaStyle.css" />
@@ -13,6 +24,33 @@
     <title>델타항공</title>
   </head>
   <body>
+    <!-- 모바일 네비 시작 -->
+    <div id="mNAV">
+      <button><i class="fa-solid fa-bars"></i></button>
+      <nav>
+        <ul class="gnb">
+          <li><a href="#">예약</a></li>
+          <li><a href="#">체크인</a></li>
+          <li><a href="#">나의항공</a></li>
+          <li><a href="#">항공편</a></li>
+          <li><a href="#">여행정보</a></li>
+          <li><a href="#">마일즈</a></li>
+          <li><a href="#">도움말</a></li>
+        </ul>
+        <ul class="lnb">
+          <li><a href="#">회원가입</a></li>
+          <li class="login"><a href="#">로그인</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- 모바일 네비 끝 -->
+
     <header id="header">
       <div class="container header_inner">
         <div class="logo">
@@ -261,6 +299,7 @@
             <div class="bottomBox_img"><img src="asset/img/fly-delta-app-1500.jpg" alt="" /></div>
             <div class="bottomBox_txt">
               <h4>플라이 델타 앱 다운로드</h4>
+              <div class="line"></div>
               <p>
                 델타항공 100주년 기프트 세트를 비롯한 델타항공 실물 카드 컬렉션을 구매하고 2장의 기념 트레이딩 카드를
                 완성해 보세요.
@@ -273,6 +312,7 @@
             </div>
             <div class="bottomBox_txt">
               <h4>기업 및 대량 델타 기프트 카드</h4>
+              <div class="line"></div>
               <p>
                 직원들과 고객, 제휴사에 감사의 마음을 전하세요. 기업과 자선단체를 위한 델타 기프트 카드 대량 구매로 보다
                 특별한 보상과 인센티브를 선사해 보세요.
@@ -297,43 +337,51 @@
         <div class="footer_menu">
           <ul>
             <li class="firstmenu">회사소개<i class="fa-solid fa-angle-down"></i></li>
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">채용정보</a></li>
-            <li><a href="#">뉴스허브</a></li>
-            <li><a href="#">투자자 관계(IR)</a></li>
-            <li><a href="#">출장여행</a></li>
-            <li><a href="#">여행사</a></li>
-            <li><a href="#">모바일웹</a></li>
+            <ul class="footer_dropdown">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">채용정보</a></li>
+              <li><a href="#">뉴스허브</a></li>
+              <li><a href="#">투자자 관계(IR)</a></li>
+              <li><a href="#">출장여행</a></li>
+              <li><a href="#">여행사</a></li>
+              <li><a href="#">모바일웹</a></li>
+            </ul>
           </ul>
 
           <ul>
             <li class="firstmenu">고객서비스<i class="fa-solid fa-angle-down"></i></li>
-            <li><a href="#">도움말</a></li>
-            <li><a href="#">트위터로 문의</a></li>
-            <li><a href="#">의견/고객의 말씀</a></li>
+            <ul class="footer_dropdown">
+              <li><a href="#">도움말</a></li>
+              <li><a href="#">트위터로 문의</a></li>
+              <li><a href="#">의견/고객의 말씀</a></li>
+            </ul>
           </ul>
 
           <ul>
             <li class="firstmenu">사이트 지원<i class="fa-solid fa-angle-down"></i></li>
-            <li><a href="#">로그인 도움</a></li>
-            <li><a href="#">사이트맵</a></li>
-            <li><a href="#">브라우저 호환성</a></li>
-            <li><a href="#">접근성</a></li>
-            <li><a href="#">예약정보</a></li>
+            <ul class="footer_dropdown">
+              <li><a href="#">로그인 도움</a></li>
+              <li><a href="#">사이트맵</a></li>
+              <li><a href="#">브라우저 호환성</a></li>
+              <li><a href="#">접근성</a></li>
+              <li><a href="#">예약정보</a></li>
+            </ul>
           </ul>
 
           <ul>
             <li class="firstmenu">정책<i class="fa-solid fa-angle-down"></i></li>
-            <li><a href="#">고객 약속</a></li>
-            <li><a href="#">활주로 지체 대책</a></li>
-            <li><a href="#">법적 고지</a></li>
-            <li><a href="#">지속 가능성</a></li>
-            <li><a href="#">운송 계약</a></li>
-            <li><a href="#">쿠키/개인정보 보호정책/보안</a></li>
-            <li><a href="#">인신 매매 성명서</a></li>
-            <li><a href="#">항공기 등록</a></li>
-            <li><a href="#">손해 배상</a></li>
-            <li><a href="#">고객 서비스 및 비상 대책</a></li>
+            <ul class="footer_dropdown">
+              <li><a href="#">고객 약속</a></li>
+              <li><a href="#">활주로 지체 대책</a></li>
+              <li><a href="#">법적 고지</a></li>
+              <li><a href="#">지속 가능성</a></li>
+              <li><a href="#">운송 계약</a></li>
+              <li><a href="#">쿠키/개인정보 보호정책/보안</a></li>
+              <li><a href="#">인신 매매 성명서</a></li>
+              <li><a href="#">항공기 등록</a></li>
+              <li><a href="#">손해 배상</a></li>
+              <li><a href="#">고객 서비스 및 비상 대책</a></li>
+            </ul>
           </ul>
         </div>
         <ul class="delta_desc">
@@ -360,6 +408,12 @@
     </footer>
     <!-- //footer -->
 
+    <!-- top버튼 -->
+    <div class="top show"><i class="fa-solid fa-circle-up"></i></div>
+
+    <!-- //JQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
@@ -373,6 +427,47 @@
         pagination: {
           el: ".swiper-pagination",
         },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        effect: "fade",
+      });
+
+      // 헤더 스크롤 = 제이쿼리
+      $(window).scroll(function () {
+        let scrollTop = $(window).scrollTop();
+        // console.log(scrollTop);
+        if (scrollTop > 100) {
+          $("#header").addClass("active");
+          $(".top").addClass("show");
+        } else {
+          $("#header").removeClass("active");
+          $(".top").removeClass("show");
+        }
+
+        if (scrollTop > 500) {
+          $(".top").addClass("show");
+        } else {
+          $(".top").removeClass("show");
+        }
+      });
+
+      // 모바일 메뉴 - 제이쿼리
+      // $("#mNAV button").mouseenter(function () {
+      //   $("#mNAV nav").addClass("dropdown");
+      // });
+      // $("#mNAV button").mouseleave(function () {
+      //   $("#mNAV nav").removeClass("dropdown");
+      // });
+
+      $("#mNAV button").click(function () {
+        $("#mNAV nav").toggleClass("dropdown");
+      });
+
+      // 푸터메뉴
+      $(".firstmenu").click(function () {
+        $(this).next(".footer_dropdown").slideToggle();
       });
     </script>
   </body>
